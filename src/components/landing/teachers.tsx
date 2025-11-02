@@ -20,15 +20,16 @@ const Teachers = () => {
             const image = teacherImages[teacher.id];
             return (
               <Card key={teacher.id} className="text-center border-none shadow-none bg-transparent">
-                <CardContent className="p-0">
-                  <div className="relative w-full aspect-square mb-4">
+                <CardContent className="p-0 flex flex-col items-center">
+                  <div className="relative w-48 h-48 md:w-52 md:h-52 mb-4">
                     {image && (
                       <Image
                         src={image.imageUrl}
                         alt={`Foto ${teacher.name}`}
-                        fill
+                        width={208}
+                        height={208}
                         data-ai-hint={image.imageHint}
-                        className="rounded-full border-4 border-background shadow-lg object-cover"
+                        className="rounded-full border-4 border-background shadow-lg object-cover w-full h-full"
                       />
                     )}
                   </div>
