@@ -38,7 +38,7 @@ const Footer = () => {
               <a href="#" aria-label="Instagram" className="text-secondary-foreground hover:text-primary transition-colors">
                 <Instagram className="h-6 w-6" />
               </a>
-              <a href="#" aria-label="YouTube" className="text-secondary-foreground hover:text-primary transition-colors">
+              <a href="https://www.youtube.com/@MTsSunanAmpel-ck5rc" aria-label="YouTube" className="text-secondary-foreground hover:text-primary transition-colors">
                 <Youtube className="h-6 w-6" />
               </a>
             </div>
