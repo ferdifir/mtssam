@@ -1,3 +1,70 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "principal",
+      "description": "Photo of the school principal",
+      "imageUrl": "https://images.unsplash.com/photo-1594672830234-ba4cfe1202dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bWFuJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYxOTk1ODg3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "teacher1",
+      "description": "Photo of a teacher",
+      "imageUrl": "https://images.unsplash.com/photo-1636581563713-5ead3fb53a80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx0ZWFjaGVyJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYxOTcwODgyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "teacher portrait"
+    },
+    {
+      "id": "teacher2",
+      "description": "Photo of a teacher",
+      "imageUrl": "https://images.unsplash.com/photo-1624824179660-80d32a64a887?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx0ZWFjaGVyJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYxOTcwODgyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "teacher portrait"
+    },
+    {
+      "id": "teacher3",
+      "description": "Photo of a teacher",
+      "imageUrl": "https://images.unsplash.com/photo-1546961329-78bef0414d7c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MjAzMDE4OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "teacher4",
+      "description": "Photo of a teacher",
+      "imageUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjE5OTU4ODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "gallery1",
+      "description": "School activity",
+      "imageUrl": "https://images.unsplash.com/photo-1752564291723-bb816a3dfb33?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzdHVkZW50cyUyMGNsYXNzcm9vbXxlbnwwfHx8fDE3NjIwNjc1NTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "students classroom"
+    },
+    {
+      "id": "gallery2",
+      "description": "School activity",
+      "imageUrl": "https://images.unsplash.com/photo-1623031345438-387dd3c45e9f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzY2hvb2wlMjBsaWJyYXJ5fGVufDB8fHx8MTc2MjAxNTk1NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "school library"
+    },
+    {
+      "id": "gallery3",
+      "description": "School activity",
+      "imageUrl": "https://images.unsplash.com/photo-1651164999214-ab345f4c6c2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzcG9ydHMlMjBkYXl8ZW58MHx8fHwxNzYxOTk4MTg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sports day"
+    },
+    {
+      "id": "gallery4",
+      "description": "School activity",
+      "imageUrl": "https://images.unsplash.com/photo-1604313890727-5542ff314405?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzY2llbmNlJTIwbGFifGVufDB8fHx8MTc2MjA0MDQzM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "science lab"
+    },
+    {
+      "id": "gallery5",
+      "description": "School activity",
+      "imageUrl": "https://images.unsplash.com/photo-1712249238948-325b6975825e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzdHVkZW50cyUyMHByYXlpbmd8ZW58MHx8fHwxNzYyMDgwMTM3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "students praying"
+    },
+    {
+      "id": "gallery6",
+      "description": "School activity",
+      "imageUrl": "https://images.unsplash.com/photo-1584750153892-38414eb8e76a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzY2hvb2wlMjBidWlsZGluZ3xlbnwwfHx8fDE3NjE5OTQ1MTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "school building"
+    }
+  ]
 }
