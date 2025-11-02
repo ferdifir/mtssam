@@ -13,8 +13,7 @@ const Footer = () => {
               <span className="text-xl font-bold font-headline text-primary">MTs Sunan Ampel</span>
             </div>
             <p className="text-sm">
-              Jl. Pendidikan No. 1, Mulyosari, <br />
-              Kecamatan Mulyorejo, 12345
+              Dsn. Mulyosari, Ds. Bunder, Kabat, Banyuwangi
             </p>
             <p className="text-sm mt-2">Email: info@mts-sunanampel.sch.id</p>
             <p className="text-sm">Telepon: (021) 123-4567</p>
