@@ -25,7 +25,7 @@ const Hero = () => {
           <Button size="lg" asChild variant="secondary" className="bg-accent text-accent-foreground hover:bg-accent/90">
             <a href="#ppdb">Pendaftaran Siswa Baru</a>
           </Button>
-          <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+          <Button size="lg" variant="secondary">
             <a href="#sambutan">Jelajahi Lebih Lanjut</a>
           </Button>
         </div>
