@@ -5,7 +5,7 @@ const Hero = () => {
     <section className="relative h-screen w-full overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full z-0">
          <iframe
-          className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2"
+          className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2 object-cover"
           src="https://www.youtube.com/embed/Y5vf0iKpVIA?autoplay=1&mute=1&loop=1&playlist=Y5vf0iKpVIA&controls=0&showinfo=0&modestbranding=1&iv_load_policy=3&rel=0"
           frameBorder="0"
           allow="autoplay; encrypted-media"
