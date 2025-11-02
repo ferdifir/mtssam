@@ -15,8 +15,8 @@ const Footer = () => {
             <p className="text-sm">
               Dsn. Mulyosari, Ds. Bunder, Kabat, Banyuwangi
             </p>
-            <p className="text-sm mt-2">Email: info@mts-sunanampel.sch.id</p>
-            <p className="text-sm">Telepon: (021) 123-4567</p>
+            <p className="text-sm mt-2">+62 823-0124-7678 (Bu Nikma)</p>
+            <p className="text-sm">+62 822-3495-5585 (P.Arif)</p>
           </div>
           <div>
             <h3 className="text-lg font-semibold font-headline mb-4 text-primary">Tautan Cepat</h3>
