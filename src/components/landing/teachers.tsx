@@ -26,10 +26,9 @@ const Teachers = () => {
                       <Image
                         src={image.imageUrl}
                         alt={`Foto ${teacher.name}`}
-                        layout="fill"
-                        objectFit="cover"
+                        fill
                         data-ai-hint={image.imageHint}
-                        className="rounded-full border-4 border-background shadow-lg"
+                        className="rounded-full border-4 border-background shadow-lg object-cover"
                       />
                     )}
                   </div>
