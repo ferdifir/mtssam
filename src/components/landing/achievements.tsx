@@ -1,5 +1,6 @@
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { achievements } from './data';
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { achievements, studentAchievements } from './data';
 
 const Achievements = () => {
   return (
@@ -22,6 +23,38 @@ const Achievements = () => {
             </Card>
           ))}
         </div>
+        
+        <div className="mt-16">
+          <h3 className="text-2xl md:text-3xl font-bold font-headline text-primary text-center mb-8">Daftar Prestasi Siswa Tahun 2023</h3>
+          <Card className="bg-card">
+            <div className="overflow-x-auto">
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead className="w-[50px]">No</TableHead>
+                    <TableHead>Nama Siswa</TableHead>
+                    <TableHead>Prestasi</TableHead>
+                    <TableHead>Tingkat</TableHead>
+                    <TableHead>Keterangan</TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  {studentAchievements.map((item, index) => (
+                    <TableRow key={index}>
+                      <TableCell>{item.no}</TableCell>
+                      <TableCell>{item.name}</TableCell>
+                      <TableCell>{item.achievement}</TableCell>
+                      <TableCell>{item.level}</TableCell>
+                      <TableCell>{item.description}</TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </div>
+          </Card>
+          <p className="text-sm text-muted-foreground mt-4 text-center">*KKM: Kelompok Kerja Madrasah</p>
+        </div>
+
       </div>
     </section>
   );

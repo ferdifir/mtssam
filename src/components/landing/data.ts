@@ -70,3 +70,16 @@ export const teachers = [
     subject: "Guru Bidang Studi",
   },
 ] as const;
+
+export const studentAchievements = [
+    { no: 1, name: "Mts Sunan Ampel Mulyosari (Putra)", achievement: "Juara 2", level: "Kecamatan", description: "Lari Gembira" },
+    { no: 2, name: "Mts Sunan Ampel Mulyosari (Putri)", achievement: "Juara 1", level: "Kecamatan", description: "Lari Gembira" },
+    { no: 3, name: "Mts Sunan Ampel Mulyosari (Putra)", achievement: "Juara 2", level: "Kecamatan", description: "Gerak jalan putra" },
+    { no: 4, name: "Mts Sunan Ampel Mulyosari (Putri)", achievement: "Juara 3", level: "Kecamatan", description: "gerak jalan Putri" },
+    { no: 5, name: "Siti mutamimah", achievement: "Juara 2", level: "KKM", description: "Tahfidz Putri" },
+    { no: 6, name: "Putri Hijjatul mabruroh", achievement: "Juara 3", level: "KKM", description: "Kaligrafi Kontemporer" },
+    { no: 7, name: "Reny Fariska", achievement: "Juara 1", level: "KKM", description: "Pidato Bahasa Indonesia" },
+    { no: 8, name: "Siti Rohmah", achievement: "Juara 1", level: "KKM", description: "Pidato bahasa arab" },
+    { no: 9, name: "Abdul Malik", achievement: "Juara 2", level: "KKM", description: "Tahfidz Putra" },
+    { no: 10, name: "Andi Saputra", achievement: "Juara 3", level: "KKM", description: "Tenis Meja" },
+] as const;
