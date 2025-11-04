@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Youtube, BookOpenCheck } from "lucide-react";
+import { Instagram, Youtube, BookOpenCheck } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -32,9 +32,6 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold font-headline mb-4 text-primary">Ikuti Kami</h3>
             <div className="flex space-x-4">
-              <a href="#" aria-label="Facebook" className="text-secondary-foreground hover:text-primary transition-colors">
-                <Facebook className="h-6 w-6" />
-              </a>
               <a href="https://www.instagram.com/mts.sunanampel.mulyosari?igsh=b2huaGp2NWNrMXN3" aria-label="Instagram" className="text-secondary-foreground hover:text-primary transition-colors">
                 <Instagram className="h-6 w-6" />
               </a>
