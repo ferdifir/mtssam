@@ -2,8 +2,8 @@
   "placeholderImages": [
     {
       "id": "principal",
-      "description": "Photo of the school principal",
-      "imageUrl": "https://images.unsplash.com/photo-1594672830234-ba4cfe1202dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bWFuJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYxOTk1ODg3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Photo of the school principal - Drs. H. Abdullah, M.Pd.I.",
+      "imageUrl": "/teacher/kepsek.jpeg",
       "imageHint": "man portrait"
     },
     {
