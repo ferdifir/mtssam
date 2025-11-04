@@ -4,10 +4,11 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetHeader, SheetTitle, SheetDescription } from "@/components/ui/sheet";
-import { Menu, BookOpenCheck } from "lucide-react";
+import { Menu } from "lucide-react";
 import { cn } from '@/lib/utils';
 import { usePPDBDialog } from '@/components/landing/ppdb-dialog';
 import { usePathname } from 'next/navigation';
+import Image from 'next/image';
 
 const navLinks = [
   { href: '/#sambutan', label: 'Sambutan' },
@@ -64,7 +65,7 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex h-20 items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
-            <BookOpenCheck className="h-7 w-7 text-primary" />
+            <Image src="/logo.png" alt="Logo MTs Sunan Ampel" width={40} height={40} className="h-10 w-10" />
             <span className={cn("font-headline font-bold text-lg", isScrolled || !isHomePage ? "text-primary" : "text-white")}>
               MTs Sunan Ampel
             </span>
@@ -91,7 +92,7 @@ const Header = () => {
                   <SheetHeader className="p-6 pb-0">
                     <SheetTitle>
                        <div className="flex items-center gap-2 mb-4">
-                          <BookOpenCheck className="h-7 w-7 text-primary" />
+                          <Image src="/logo.png" alt="Logo MTs Sunan Ampel" width={40} height={40} className="h-10 w-10" />
                           <span className="font-headline font-bold text-lg text-primary">MTs Sunan Ampel</span>
                         </div>
                     </SheetTitle>

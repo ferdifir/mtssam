@@ -1,4 +1,5 @@
-import { Instagram, Youtube, BookOpenCheck } from "lucide-react";
+import { Instagram, Youtube } from "lucide-react";
+import Image from "next/image";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -9,7 +10,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="flex flex-col">
             <div className="flex items-center mb-4">
-              <BookOpenCheck className="h-8 w-8 mr-2 text-primary" />
+              <Image src="/logo.png" alt="Logo MTs Sunan Ampel" width={32} height={32} className="h-8 w-8 mr-2" />
               <span className="text-xl font-bold font-headline text-primary">MTs Sunan Ampel</span>
             </div>
             <p className="text-sm">
