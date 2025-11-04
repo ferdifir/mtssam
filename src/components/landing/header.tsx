@@ -65,7 +65,7 @@ const Header = () => {
         <div className="flex h-20 items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
             <BookOpenCheck className="h-7 w-7 text-primary" />
-            <span className={cn("font-headline font-bold text-lg", isScrolled || !isHomePage ? "text-primary" : "text-white md:text-primary")}>
+            <span className={cn("font-headline font-bold text-lg", isScrolled || !isHomePage ? "text-primary" : "text-white")}>
               MTs Sunan Ampel
             </span>
           </Link>
