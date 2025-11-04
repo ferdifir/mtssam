@@ -76,8 +76,8 @@ const Header = () => {
           </nav>
 
           <div className="flex items-center gap-4">
-            <Button className="hidden md:flex bg-accent text-accent-foreground hover:bg-accent/90" onClick={() => openPPDBDialog(true)}>
-              Daftar PPDB
+            <Button asChild className="hidden md:flex bg-accent text-accent-foreground hover:bg-accent/90">
+              <Link href="/#ppdb">Daftar PPDB</Link>
             </Button>
 
             <div className="md:hidden">
