@@ -1,4 +1,8 @@
+'use client';
+
+import React from 'react';
 import Image from 'next/image';
+import Autoplay from "embla-carousel-autoplay";
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { teachers } from './data';
 import { Card, CardContent } from '@/components/ui/card';
@@ -14,6 +18,10 @@ const Teachers = () => {
   const teacherImages = Object.fromEntries(
     PlaceHolderImages.filter(img => img.id.startsWith('teacher')).map(img => [img.id, img])
   );
+  
+  const plugin = React.useRef(
+    Autoplay({ delay: 4000, stopOnInteraction: true })
+  );
 
   return (
     <section id="guru" className="py-12 md:py-24 bg-secondary">
@@ -23,11 +31,14 @@ const Teachers = () => {
           <p className="text-lg text-muted-foreground mt-2 max-w-2xl mx-auto">Dibimbing oleh para guru yang berdedikasi dan ahli di bidangnya.</p>
         </div>
         <Carousel
+          plugins={[plugin.current]}
           opts={{
             align: "start",
             loop: true,
           }}
           className="w-full max-w-6xl mx-auto"
+          onMouseEnter={plugin.current.stop}
+          onMouseLeave={plugin.current.reset}
         >
           <CarouselContent>
             {teachers.map((teacher, index) => {
