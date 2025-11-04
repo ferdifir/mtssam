@@ -1,6 +1,9 @@
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card } from '@/components/ui/card';
+import { Button } from '../ui/button';
+import Link from 'next/link';
+import { Instagram } from 'lucide-react';
 
 const Gallery = () => {
   const galleryImages = PlaceHolderImages.filter(img => img.id.startsWith('gallery'));
@@ -27,6 +30,14 @@ const Gallery = () => {
               </div>
             </Card>
           ))}
+        </div>
+        <div className="text-center mt-16">
+            <Button asChild>
+                <Link href="https://www.instagram.com/mts.sunanampel.mulyosari?igsh=b2huaGp2NWNrMXN3" target="_blank" rel="noopener noreferrer">
+                    <Instagram className="mr-2 h-4 w-4" />
+                    Lihat Lebih Banyak di Instagram
+                </Link>
+            </Button>
         </div>
       </div>
     </section>
