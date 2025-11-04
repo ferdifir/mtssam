@@ -25,7 +25,7 @@ const Achievements = () => {
         </div>
         
         <div className="mt-16">
-          <h3 className="text-2xl md:text-3xl font-bold font-headline text-primary text-center mb-8">Daftar Prestasi Siswa Tahun 2023</h3>
+          <h3 className="text-2xl md:text-3xl font-bold font-headline text-primary text-center mb-8">Daftar Prestasi Siswa</h3>
           <Card className="bg-card">
             <div className="overflow-x-auto">
               <Table>

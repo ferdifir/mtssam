@@ -82,4 +82,7 @@ export const studentAchievements = [
     { no: 8, name: "Siti Rohmah", achievement: "Juara 1", level: "KKM", description: "Pidato bahasa arab" },
     { no: 9, name: "Abdul Malik", achievement: "Juara 2", level: "KKM", description: "Tahfidz Putra" },
     { no: 10, name: "Andi Saputra", achievement: "Juara 3", level: "KKM", description: "Tenis Meja" },
+    { no: 11, name: "Achmad Muqorrobin", achievement: "Juara 1", level: "Kabupaten", description: "Matematika" },
+    { no: 12, name: "Fuji Nurman", achievement: "Juara 1", level: "KKM", description: "Pidato Bahasa Indonesia" },
+    { no: 13, name: "Suci Aulia", achievement: "Juara 1", level: "KKM", description: "Catur" },
 ] as const;
