@@ -11,6 +11,7 @@ import { usePathname } from 'next/navigation';
 
 const navLinks = [
   { href: '/#sambutan', label: 'Sambutan' },
+  { href: '/#visimisi', label: 'Visi & Misi' },
   { href: '/#prestasi', label: 'Prestasi' },
   { href: '/struktur', label: 'Struktur' },
   { href: '/#guru', label: 'Guru' },

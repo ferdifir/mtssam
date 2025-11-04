@@ -22,6 +22,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold font-headline mb-4 text-primary">Tautan Cepat</h3>
             <ul className="space-y-2 text-sm">
               <li><a href="#sambutan" className="hover:text-primary transition-colors">Sambutan Kepala Sekolah</a></li>
+              <li><a href="#visimisi" className="hover:text-primary transition-colors">Visi & Misi</a></li>
               <li><a href="#prestasi" className="hover:text-primary transition-colors">Prestasi</a></li>
               <li><a href="#guru" className="hover:text-primary transition-colors">Guru</a></li>
               <li><a href="#galeri" className="hover:text-primary transition-colors">Galeri</a></li>
