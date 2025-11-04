@@ -11,6 +11,7 @@ import { usePPDBDialog } from '@/components/landing/ppdb-dialog';
 const navLinks = [
   { href: '#sambutan', label: 'Sambutan' },
   { href: '#prestasi', label: 'Prestasi' },
+  { href: '#struktur', label: 'Struktur' },
   { href: '#guru', label: 'Guru' },
   { href: '#galeri', label: 'Galeri' },
 ];

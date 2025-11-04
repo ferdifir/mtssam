@@ -25,23 +25,48 @@ export const achievements = [
 
 export const teachers = [
   {
-    id: 'teacher1',
-    name: 'Drs. H. Ahmad Fauzi, M.Pd.',
-    subject: 'Matematika',
+    id: 'santoso',
+    name: 'Santoso, S.HI',
+    subject: 'Kepala Madrasah',
   },
   {
-    id: 'teacher2',
-    name: 'Siti Aisyah, S.Ag.',
-    subject: 'Pendidikan Agama Islam',
+    id: 'abdulhalim',
+    name: 'Abdul Halim A.A, S.Pd',
+    subject: 'Waka Kurikulum / Operator',
   },
   {
-    id: 'teacher3',
-    name: 'Dr. Indah Permatasari, M.Hum.',
-    subject: 'Bahasa Indonesia',
+    id: 'ainurrofiq',
+    name: 'Ah. Ainur Rofiq, M.E',
+    subject: 'Waka Kesiswaan',
   },
   {
-    id: 'teacher4',
-    name: 'Budi Santoso, S.Pd.',
-    subject: 'Ilmu Pengetahuan Alam',
+    id: 'nikmatul',
+    name: 'Nikmatul Ulfa Sari, S.SI',
+    subject: 'Bendahara / Wali Kelas VIII',
+  },
+  {
+    id: 'cicifanisa',
+    name: 'Cici Fanisa Yulia Dwi Jayanti, S.Pd',
+    subject: 'Kepala TU / Koordinator BK/BP / Wali Kelas IX',
+  },
+  {
+    id: 'mishadi',
+    name: 'Mishadi',
+    subject: 'Waka Humas',
+  },
+  {
+    id: 'mistari',
+    name: 'Mistari',
+    subject: 'Waka Sarpras',
+  },
+  {
+    id: 'khittotud',
+    name: 'Khittotud Diniyah, S.Pd',
+    subject: 'Kepala Perpustakaan / Wali Kelas VII',
+  },
+  {
+    id: 'uswah',
+    name: 'Uswah Hasanah',
+    subject: 'Guru Bidang Studi',
   },
 ] as const;
