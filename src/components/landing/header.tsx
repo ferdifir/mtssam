@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetHeader, SheetTitle, SheetDescription } from "@/components/ui/sheet";
 import { Menu, BookOpenCheck } from "lucide-react";
 import { cn } from '@/lib/utils';
 import { usePPDBDialog } from '@/components/landing/ppdb-dialog';
@@ -35,7 +35,6 @@ const Header = () => {
   const NavLinkItems = ({ isMobile = false }) => (
     <>
       {navLinks.map((link) => {
-        const isExternalPage = link.href.startsWith('/');
         const isStructureOrVisiMisi = link.label === 'Struktur' || link.label === 'Visi & Misi';
 
         if (isMobile) {
@@ -77,7 +76,7 @@ const Header = () => {
 
           <div className="flex items-center gap-4">
             <Button asChild className="hidden md:flex bg-accent text-accent-foreground hover:bg-accent/90">
-              <Link href="/#ppdb">Daftar PPDB</Link>
+              <a href="/#ppdb">Daftar PPDB</a>
             </Button>
 
             <div className="md:hidden">
@@ -88,12 +87,19 @@ const Header = () => {
                     <span className="sr-only">Buka Menu</span>
                   </Button>
                 </SheetTrigger>
-                <SheetContent side="right" className="w-[280px] bg-background">
+                <SheetContent side="right" className="w-[280px] bg-background p-0">
+                  <SheetHeader className="p-6 pb-0">
+                    <SheetTitle>
+                       <div className="flex items-center gap-2 mb-4">
+                          <BookOpenCheck className="h-7 w-7 text-primary" />
+                          <span className="font-headline font-bold text-lg text-primary">MTs Sunan Ampel</span>
+                        </div>
+                    </SheetTitle>
+                    <SheetDescription className="sr-only">
+                        Menu navigasi utama. Pilih dari tautan di bawah untuk menjelajahi situs.
+                    </SheetDescription>
+                  </SheetHeader>
                   <div className="p-6">
-                    <div className="flex items-center gap-2 mb-8">
-                       <BookOpenCheck className="h-7 w-7 text-primary" />
-                      <span className="font-headline font-bold text-lg text-primary">MTs Sunan Ampel</span>
-                    </div>
                     <nav className="flex flex-col gap-4">
                       <NavLinkItems isMobile />
                       <SheetClose asChild>
