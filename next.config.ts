@@ -34,7 +34,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: '/favicon.ico',
-        destination: '/logo.png',
+        destination: '/logo_mtssam.png',
         permanent: true,
       },
     ]

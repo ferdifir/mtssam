@@ -16,7 +16,7 @@ import {
 
 const Teachers = () => {
   const teacherImages = Object.fromEntries(
-    PlaceHolderImages.filter(img => img.id.startsWith('teacher')).map(img => [img.id, img])
+    PlaceHolderImages.filter(img => img.id.startsWith('teacher')).map(img => [img.id.replace('teacher-', ''), img])
   );
   
   const plugin = React.useRef(
@@ -51,7 +51,7 @@ const Teachers = () => {
                         <div className="relative w-48 h-48 md:w-52 md:h-52 mb-4">
                           {image && (
                             <Image
-                              src={image.imageUrl}
+                              src={`${image.imageUrl}?v=${Date.now()}`}
                               alt={`Foto ${teacher.name}`}
                               width={208}
                               height={208}

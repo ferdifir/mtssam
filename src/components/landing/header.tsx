@@ -65,8 +65,8 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex h-20 items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
-            <Image src="/logo.png" alt="Logo MTs Sunan Ampel Mulyosari" width={40} height={40} className="h-10 w-10" />
-            <span className={cn("font-headline font-bold text-lg", isScrolled || !isHomePage ? "text-primary" : "text-white")}>
+            <Image src="/logo_mtssam.png" alt="Logo MTs Sunan Ampel Mulyosari" width={40} height={40} className="h-10 w-10" />
+            <span className={cn("font-headline font-bold text-lg", isScrolled || !isHomePage ? "text-primary" : "text-neutral-900")}>
               MTs Sunan Ampel Mulyosari
             </span>
           </Link>
