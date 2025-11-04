@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
 import { Menu, BookOpenCheck } from "lucide-react";
 import { cn } from '@/lib/utils';
+import { usePPDBDialog } from '@/components/landing/ppdb-dialog';
 
 const navLinks = [
   { href: '#sambutan', label: 'Sambutan' },
@@ -16,6 +17,7 @@ const navLinks = [
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const { setOpen: openPPDBDialog } = usePPDBDialog();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -62,8 +64,8 @@ const Header = () => {
           </nav>
 
           <div className="flex items-center gap-4">
-            <Button asChild className="hidden md:flex bg-accent text-accent-foreground hover:bg-accent/90">
-              <a href="#ppdb">Daftar PPDB</a>
+            <Button className="hidden md:flex bg-accent text-accent-foreground hover:bg-accent/90" onClick={() => openPPDBDialog(true)}>
+              Daftar PPDB
             </Button>
 
             <div className="md:hidden">
@@ -83,8 +85,8 @@ const Header = () => {
                     <nav className="flex flex-col gap-4">
                       <NavLinkItems isMobile />
                       <SheetClose asChild>
-                        <Button asChild className="w-full mt-4 bg-accent text-accent-foreground hover:bg-accent/90">
-                          <a href="#ppdb">Daftar PPDB</a>
+                        <Button className="w-full mt-4 bg-accent text-accent-foreground hover:bg-accent/90" onClick={() => openPPDBDialog(true)}>
+                          Daftar PPDB
                         </Button>
                       </SheetClose>
                     </nav>

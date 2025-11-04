@@ -1,6 +1,10 @@
+'use client';
 import { Button } from "@/components/ui/button";
+import { usePPDBDialog } from '@/components/landing/ppdb-dialog';
 
 const Hero = () => {
+  const { setOpen } = usePPDBDialog();
+
   return (
     <section className="relative h-screen w-full overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full z-0">
@@ -22,8 +26,8 @@ const Hero = () => {
           Membentuk Generasi Unggul Berlandaskan Iman dan Taqwa
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-4">
-          <Button size="lg" asChild variant="secondary" className="bg-accent text-accent-foreground hover:bg-accent/90">
-            <a href="#ppdb">Pendaftaran Siswa Baru</a>
+          <Button size="lg" variant="secondary" className="bg-accent text-accent-foreground hover:bg-accent/90" onClick={() => setOpen(true)}>
+            Pendaftaran Siswa Baru
           </Button>
           <Button size="lg" variant="secondary">
             <a href="#sambutan">Jelajahi Lebih Lanjut</a>
