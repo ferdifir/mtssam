@@ -11,7 +11,7 @@ import { usePathname } from 'next/navigation';
 
 const navLinks = [
   { href: '/#sambutan', label: 'Sambutan' },
-  { href: '/#visimisi', label: 'Visi & Misi' },
+  { href: '/visi-misi', label: 'Visi & Misi' },
   { href: '/#prestasi', label: 'Prestasi' },
   { href: '/struktur', label: 'Struktur' },
   { href: '/#guru', label: 'Guru' },
@@ -35,20 +35,21 @@ const Header = () => {
   const NavLinkItems = ({ isMobile = false }) => (
     <>
       {navLinks.map((link) => {
-        const isStructureLink = link.label === 'Struktur';
-        const finalHref = (isHomePage || !isStructureLink) ? link.href : `/${link.href.split('#')[1] || ''}`;
+        const isExternalPage = link.href.startsWith('/');
+        const isStructureOrVisiMisi = link.label === 'Struktur' || link.label === 'Visi & Misi';
 
         if (isMobile) {
           return (
             <SheetClose asChild key={link.href}>
-              <Link href={isStructureLink ? '/struktur' : link.href} className="block px-4 py-2 text-lg hover:bg-accent hover:text-accent-foreground rounded-md">
+              <Link href={link.href} className="block px-4 py-2 text-lg hover:bg-accent hover:text-accent-foreground rounded-md">
                 {link.label}
               </Link>
             </SheetClose>
           )
         }
+        
         return (
-          <Link key={link.href} href={isStructureLink ? '/struktur' : link.href} className="text-sm font-medium hover:text-primary transition-colors">
+          <Link key={link.href} href={isStructureOrVisiMisi ? link.href : (isHomePage ? link.href : `/${link.href}`)} className="text-sm font-medium hover:text-primary transition-colors">
             {link.label}
           </Link>
         )
