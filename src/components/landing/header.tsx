@@ -13,7 +13,7 @@ import Image from 'next/image';
 const navLinks = [
   { href: '/#sambutan', label: 'Sambutan' },
   { href: '/visi-misi', label: 'Visi & Misi' },
-  { href: '/#prestasi', label: 'Prestasi' },
+  { href: '/prestasi', label: 'Prestasi' },
   { href: '/struktur', label: 'Struktur' },
   { href: '/#guru', label: 'Guru' },
   { href: '/#galeri', label: 'Galeri' },
@@ -36,7 +36,7 @@ const Header = () => {
   const NavLinkItems = ({ isMobile = false }) => (
     <>
       {navLinks.map((link) => {
-        const isStructureOrVisiMisi = link.label === 'Struktur' || link.label === 'Visi & Misi';
+        const isExternalPage = link.href.startsWith('/');
 
         if (isMobile) {
           return (
@@ -49,7 +49,7 @@ const Header = () => {
         }
         
         return (
-          <Link key={link.href} href={isStructureOrVisiMisi ? link.href : (isHomePage ? link.href : `/${link.href}`)} className="text-sm font-medium hover:text-primary transition-colors">
+          <Link key={link.href} href={isExternalPage ? link.href : (isHomePage ? link.href : `/${link.href}`)} className="text-sm font-medium hover:text-primary transition-colors">
             {link.label}
           </Link>
         )

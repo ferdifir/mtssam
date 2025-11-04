@@ -24,7 +24,7 @@ const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li><a href="/#sambutan" className="hover:text-primary transition-colors">Sambutan Kepala Sekolah</a></li>
               <li><a href="/visi-misi" className="hover:text-primary transition-colors">Visi & Misi</a></li>
-              <li><a href="/#prestasi" className="hover:text-primary transition-colors">Prestasi</a></li>
+              <li><a href="/prestasi" className="hover:text-primary transition-colors">Prestasi</a></li>
               <li><a href="/#guru" className="hover:text-primary transition-colors">Guru</a></li>
               <li><a href="/#galeri" className="hover:text-primary transition-colors">Galeri</a></li>
               <li><a href="#ppdb" className="hover:text-primary transition-colors">PPDB</a></li>
