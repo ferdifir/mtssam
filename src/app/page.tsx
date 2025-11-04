@@ -6,7 +6,6 @@ import Teachers from '@/components/landing/teachers';
 import Gallery from '@/components/landing/gallery';
 import Cta from '@/components/landing/cta';
 import Footer from '@/components/landing/footer';
-import Organization from '@/components/landing/organization';
 
 export default function Home() {
   return (
@@ -16,7 +15,6 @@ export default function Home() {
         <Hero />
         <Welcome />
         <Achievements />
-        <Organization />
         <Teachers />
         <Gallery />
         <Cta />

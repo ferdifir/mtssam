@@ -7,18 +7,21 @@ import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/s
 import { Menu, BookOpenCheck } from "lucide-react";
 import { cn } from '@/lib/utils';
 import { usePPDBDialog } from '@/components/landing/ppdb-dialog';
+import { usePathname } from 'next/navigation';
 
 const navLinks = [
-  { href: '#sambutan', label: 'Sambutan' },
-  { href: '#prestasi', label: 'Prestasi' },
-  { href: '#struktur', label: 'Struktur' },
-  { href: '#guru', label: 'Guru' },
-  { href: '#galeri', label: 'Galeri' },
+  { href: '/#sambutan', label: 'Sambutan' },
+  { href: '/#prestasi', label: 'Prestasi' },
+  { href: '/struktur', label: 'Struktur' },
+  { href: '/#guru', label: 'Guru' },
+  { href: '/#galeri', label: 'Galeri' },
 ];
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const { setOpen: openPPDBDialog } = usePPDBDialog();
+  const pathname = usePathname();
+  const isHomePage = pathname === '/';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,32 +33,38 @@ const Header = () => {
 
   const NavLinkItems = ({ isMobile = false }) => (
     <>
-      {navLinks.map((link) => (
-        isMobile ? (
-          <SheetClose asChild key={link.href}>
-            <Link href={link.href} className="block px-4 py-2 text-lg hover:bg-accent hover:text-accent-foreground rounded-md">
-              {link.label}
-            </Link>
-          </SheetClose>
-        ) : (
-          <Link key={link.href} href={link.href} className="text-sm font-medium hover:text-primary transition-colors">
+      {navLinks.map((link) => {
+        const isStructureLink = link.label === 'Struktur';
+        const finalHref = (isHomePage || !isStructureLink) ? link.href : `/${link.href.split('#')[1] || ''}`;
+
+        if (isMobile) {
+          return (
+            <SheetClose asChild key={link.href}>
+              <Link href={isStructureLink ? '/struktur' : link.href} className="block px-4 py-2 text-lg hover:bg-accent hover:text-accent-foreground rounded-md">
+                {link.label}
+              </Link>
+            </SheetClose>
+          )
+        }
+        return (
+          <Link key={link.href} href={isStructureLink ? '/struktur' : link.href} className="text-sm font-medium hover:text-primary transition-colors">
             {link.label}
           </Link>
         )
-      ))}
+      })}
     </>
   );
   
   return (
     <header className={cn(
       "sticky top-0 z-50 w-full transition-all duration-300",
-      isScrolled ? "bg-background/95 shadow-md backdrop-blur-sm" : "bg-transparent"
+      isScrolled || !isHomePage ? "bg-background/95 shadow-md backdrop-blur-sm" : "bg-transparent"
     )}>
       <div className="container mx-auto px-4">
         <div className="flex h-20 items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
             <BookOpenCheck className="h-7 w-7 text-primary" />
-            <span className={cn("font-headline font-bold text-lg", isScrolled ? "text-primary" : "text-white md:text-primary")}>
+            <span className={cn("font-headline font-bold text-lg", isScrolled || !isHomePage ? "text-primary" : "text-white md:text-primary")}>
               MTs Sunan Ampel
             </span>
           </Link>
@@ -72,7 +81,7 @@ const Header = () => {
             <div className="md:hidden">
               <Sheet>
                 <SheetTrigger asChild>
-                  <Button variant="ghost" size="icon" className={cn(isScrolled ? "text-foreground" : "text-white hover:text-white/80")}>
+                  <Button variant="ghost" size="icon" className={cn(isScrolled || !isHomePage ? "text-foreground" : "text-white hover:text-white/80")}>
                     <Menu className="h-6 w-6" />
                     <span className="sr-only">Buka Menu</span>
                   </Button>
