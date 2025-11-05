@@ -92,7 +92,7 @@ const Header = () => {
                   <SheetHeader className="p-6 pb-0">
                     <SheetTitle>
                        <div className="flex items-center gap-2 mb-4">
-                          <Image src="/logo.png" alt="Logo MTs Sunan Ampel Mulyosari" width={40} height={40} className="h-10 w-10" />
+                          <Image src="/logo_mtssam.png" alt="Logo MTs Sunan Ampel Mulyosari" width={40} height={40} className="h-10 w-10" />
                           <span className="font-headline font-bold text-lg text-primary">MTs Sunan Ampel Mulyosari</span>
                         </div>
                     </SheetTitle>
