@@ -25,18 +25,13 @@ export const achievements = [
 
 export const teachers = [
   {
-    id: "santoso",
+    id: "principal",
     name: "Santoso, S.HI",
     subject: "Kepala Madrasah",
   },
   {
-    id: "abdulhalim",
-    name: "Abdul Halim A.A, S.Pd",
-    subject: "Waka Kurikulum / Operator",
-  },
-  {
     id: "ainurrofiq",
-    name: "Ah. Ainur Rofiq, M.E",
+    name: "Abdul Halim A.A, S.Pd",
     subject: "Waka Kesiswaan",
   },
   {
@@ -50,24 +45,9 @@ export const teachers = [
     subject: "Kepala TU / Koordinator BK/BP / Wali Kelas IX",
   },
   {
-    id: "mishadi",
-    name: "Mishadi",
-    subject: "Waka Humas",
-  },
-  {
-    id: "mistari",
-    name: "Mistari",
-    subject: "Waka Sarpras",
-  },
-  {
     id: "khittotud",
     name: "Khittotud Diniyah, S.Pd",
     subject: "Kepala Perpustakaan / Wali Kelas VII",
-  },
-  {
-    id: "uswah",
-    name: "Uswah Hasanah",
-    subject: "Guru Bidang Studi",
   },
 ] as const;
 

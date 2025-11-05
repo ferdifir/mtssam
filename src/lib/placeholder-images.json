@@ -2,62 +2,38 @@
   "placeholderImages": [
     {
       "id": "principal",
-      "description": "Photo of the school principal - Drs. H. Abdullah, M.Pd.I.",
+      "description": "Photo of the school principal - Santoso, S.HI",
       "imageUrl": "/teacher/kepsek.jpeg",
       "imageHint": "man portrait"
     },
     {
-      "id": "teacher-santoso",
-      "description": "Photo of Santoso, S.HI",
-      "imageUrl": "https://images.unsplash.com/photo-1522556189639-b150ed9c4330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjIyMjQ5MzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "man portrait"
-    },
-    {
-      "id": "teacher-abdulhalim",
-      "description": "Photo of Abdul Halim A.A, S.Pd",
-      "imageUrl": "https://images.unsplash.com/photo-1624395213043-fa2e123b2656?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjIyMjQ5MzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "id": "teacher-principal",
+      "description": "Photo of the school principal - Santoso, S.HI",
+      "imageUrl": "/teacher/santoso_2.png",
       "imageHint": "man portrait"
     },
     {
       "id": "teacher-ainurrofiq",
-      "description": "Photo of Ah. Ainur Rofiq, M.E",
-      "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjIyMjQ5MzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Photo of Abdul Halim A.A, S.Pd",
+      "imageUrl": "/teacher/abdul_arifian_2.png",
       "imageHint": "man portrait"
     },
     {
       "id": "teacher-nikmatul",
       "description": "Photo of Nikmatul Ulfa Sari, S.SI",
-      "imageUrl": "/teacher/nikma.jpg",
+      "imageUrl": "/teacher/nikmatul_2.png",
       "imageHint": "woman portrait"
     },
     {
       "id": "teacher-cicifanisa",
       "description": "Photo of Cici Fanisa Yulia Dwi Jayanti, S.Pd",
-      "imageUrl": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MjE1NDMxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/teacher/cicifanisa_2.png",
       "imageHint": "woman portrait"
-    },
-    {
-      "id": "teacher-mishadi",
-      "description": "Photo of Mishadi",
-      "imageUrl": "https://images.unsplash.com/photo-1607031542107-f6f46b5d54e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjIyMjQ5MzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "man portrait"
-    },
-    {
-      "id": "teacher-mistari",
-      "description": "Photo of Mistari",
-      "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjIyMjQ5MzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "man portrait"
     },
     {
       "id": "teacher-khittotud",
       "description": "Photo of Khittotud Diniyah, S.Pd",
-      "imageUrl": "https://images.unsplash.com/photo-161065507808-a59293f4e332?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MjE1NDMxOHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "woman portrait"
-    },
-    {
-      "id": "teacher-uswah",
-      "description": "Photo of Uswah Hasanah",
-      "imageUrl": "https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MjE1NDMxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/teacher/khittotud_2.png",
       "imageHint": "woman portrait"
     },
     {

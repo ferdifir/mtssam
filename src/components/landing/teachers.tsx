@@ -51,7 +51,7 @@ const Teachers = () => {
                         <div className="relative w-48 h-48 md:w-52 md:h-52 mb-4">
                           {image && (
                             <Image
-                              src={`${image.imageUrl}?v=${Date.now()}`}
+                              src={image.imageUrl}
                               alt={`Foto ${teacher.name}`}
                               width={208}
                               height={208}

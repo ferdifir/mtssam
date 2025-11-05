@@ -38,7 +38,7 @@ const Welcome = () => {
                 Wassalamu'alaikum Warahmatullahi Wabarakatuh.
               </p>
             </div>
-            <p className="mt-6 font-bold font-headline text-lg">Drs. H. Abdullah, M.Pd.I.</p>
+            <p className="mt-6 font-bold font-headline text-lg">Santoso, S.HI.</p>
             <p className="text-sm text-muted-foreground">Kepala MTs Sunan Ampel Mulyosari</p>
           </div>
         </div>
