@@ -30,15 +30,6 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  async redirects() {
-    return [
-      {
-        source: '/favicon.ico',
-        destination: '/logo_mtssam.png',
-        permanent: true,
-      },
-    ]
-  },
 };
 
 export default nextConfig;
